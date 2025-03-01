@@ -11,9 +11,9 @@
             background-color: #f0f8ff;
         }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?beach,ocean') no-repeat center center;
+            background: url('https://source.unsplash.com/1600x900/?beach,ocean,island') no-repeat center center;
             background-size: cover;
-            height: 400px;
+            height: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -26,6 +26,12 @@
         }
         .section {
             padding: 50px 0;
+        }
+        .destination-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -60,7 +66,24 @@
     <section id="packages" class="section bg-light text-center">
         <div class="container">
             <h2>熱門行程</h2>
-            <p>精選行程，讓你輕鬆玩遍離島美景！</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://source.unsplash.com/400x300/?penghu,taiwan" class="destination-img" alt="澎湖">
+                    <h4>澎湖行程</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://source.unsplash.com/400x300/?green-island,taiwan" class="destination-img" alt="綠島">
+                    <h4>綠島行程</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://source.unsplash.com/400x300/?lanyu,taiwan" class="destination-img" alt="蘭嶼">
+                    <h4>蘭嶼行程</h4>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://source.unsplash.com/400x300/?xiaoliuqiu,taiwan" class="destination-img" alt="小琉球">
+                    <h4>小琉球行程</h4>
+                </div>
+            </div>
         </div>
     </section>
 
